@@ -1,22 +1,16 @@
 #  File: Chess.py
 
-#  Description:
+#  Description: The Eight Queens Problem is a fairly old problem that has been well discussed and researched. The original statement of the problem ran as follows:
+#  how can we place eight queens on a regular chess board such that no queen can capture another. It turns out there is no unique solution but 92 possible
+#  solutions of which only 12 are distinct. The 12 distinct solutions can generate all other solutions through reflections and / or rotations.
+#
+#  Given the size of a chess board, this script generates all possible solutions for the 8 Queens problem 
 
-#  Student Name:
+#  Student Name: Rishabh Shah
 
-#  Student UT EID:
-
-#  Partner Name:
-
-#  Partner UT EID:
+#  Student UT EID: rks2387
 
 #  Course Name: CS 313E
-
-#  Unique Number:
-
-#  Date Created:
-
-#  Date Last Modified:
 
 import sys
 
@@ -65,36 +59,7 @@ class Queens(object):
                         return True
                     self.board[i][col] = '*'
             return False
-    '''def recursive_solve(self, col):
-        if (col == self.n):
-            self.solutions += 1
-        else:
-            for i in range(self.n):
-                if (self.is_valid(i, col)):
-                    self.board[i][col] = 'Q'
-                    if (self.recursive_solve(col + 1)):
-                        return True
-                    self.board[i][col] = '*'
-            return False'''
 
-    '''def recursive_solve(self, row, col):
-        if (col == self.n):
-            return True
-        else:
-            if (self.is_valid(row, col)):
-                self.board[row][col] = 'Q'
-                if (self.recursive_solve(row,col + 1)):
-                    return True
-                elif (self.recursive_solve(row + 1,col)):
-                    return True
-                self.board[row][col] = '*'
-            return False'''
-    '''def count_solutions(self):
-        solutions = 0
-        for x in range(self.n):
-            if self.recursive_solve(x):
-                solutions += 1
-        return solutions'''
     # if the problem has a solution print the board
     def solve(self):
         for i in range(self.n):
