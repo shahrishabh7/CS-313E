@@ -1,22 +1,10 @@
 #  File: ExpressionTree.py
 
-#  Description:
+#  Description: This script reads in expressions and turns the infix expression into a tree. It then evaluates the expression and prints the result. It
+#  can also write the prefix and postfix versions of the same expression.
 
 #  Student's Name: Rishabh Shah
 
-#  Student's UT EID: rks2387
-
-#  Partner's Name: Harshith Vanam
-
-#  Partner's UT EID: hkv232
-
-#  Course Name: CS 313E
-
-#  Unique Number: 50845
-
-#  Date Created: 11/13/2020
-
-#  Date Last Modified: 11/13/2020
 
 import sys
 
