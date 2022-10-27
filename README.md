@@ -1,2 +1,2 @@
-# Personal Projects - Creative Math Problem Solving
-This repository contains personal projects I undertook to solve certain mathematical puzzles.
+# Class assignments
+# This repository contains some of my favorite assignments.
